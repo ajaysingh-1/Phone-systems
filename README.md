@@ -8,7 +8,7 @@ input[type=text]{flex:1;min-width:180px;font-size:13px}
 select{font-size:13px;padding:6px 10px;border:0.5px solid var(--color-border-secondary);border-radius:var(--border-radius-md);background:var(--color-background-primary);color:var(--color-text-primary);cursor:pointer}
 .count{font-size:12px;color:var(--color-text-secondary);white-space:nowrap;align-self:center}
 .tbl-wrap{overflow-x:auto;border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg)}
-table{width:100%;border-collapse:collapse;font-size:12px;table-layout:fixed}
+table{width:100%;border-collapse:collapse;font-size:12px;table-layout:auto}
 th{background:var(--color-background-secondary);color:var(--color-text-secondary);font-weight:500;font-size:11px;text-transform:uppercase;letter-spacing:0.04em;padding:10px 12px;border-bottom:0.5px solid var(--color-border-secondary);text-align:left;white-space:nowrap;cursor:pointer;user-select:none}
 th:hover{color:var(--color-text-primary)}
 th.sort-asc::after{content:" ↑"}
@@ -60,7 +60,6 @@ col.c1{width:110px}col.c2{width:70px}col.c3{width:170px}col.c4{width:110px}col.c
 </div>
 <div class="tbl-wrap">
 <table id="tbl">
-<colgroup><col class="c1"><col class="c2"><col class="c3"><col class="c4"><col class="c5"><col class="c6"><col class="c7"><col class="c8"></colgroup>
 <thead>
 <tr>
   <th onclick="sortTable(0)">Platform</th>
